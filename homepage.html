@@ -1,0 +1,116 @@
+<style>
+  main {
+    background-color: #24273a;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    box-shadow: none;
+    /* padding: 20px; */
+  }
+
+  .taitel {
+    font-size: 50px;
+    margin-top: 100px;
+    /* margin-left: 40px; */
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .TeNgAh {
+    text-align: center;
+  }
+
+  .imej {
+    border-radius: 10px;
+    height: 200px;
+    width: auto;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+    margin: 40px 120px 40px 120px;
+  }
+
+  .grid-item {
+    background-color: #363a4f;
+    color: #cad3f5;
+    padding: 50px 10px 50px 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .grid-link {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .grid-item:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+  }
+
+  /* Responsive styles for mobile devices */
+  @media (max-width: 1000px) { /* 768 */
+    main {
+      padding: 0;
+    }
+
+    .taitel {
+        line-height: normal;
+        font-size: 18px;
+    }
+
+    .grid-container {
+      grid-template-columns: 1fr;
+      /* 1 column on mobile */
+      grid-template-rows: auto;
+      /* Rows adjust automatically */
+      padding: 0;
+
+      margin: 40px;
+    }
+  }
+</style>
+
+<!-- <div class="TeNgAh">
+  <img
+    src="asset/luv.png"
+    alt="Profile Image"
+    style="border-radius: 10px; width: 200px; height: auto"
+  />
+</div> -->
+
+<div class="taitel">
+  <h1>Blog Title</h1>
+  <p>Blog Sub Title</p>
+</div>
+
+
+
+<div class="grid-container">
+  <a class="grid-link" href="https://youtube.com" target="_blank">
+    <div class="grid-item"><i class="fa-brands fa-github"></i> GitHub</div>
+  </a>
+  <a class="grid-link" href="https://youtube.com" target="_blank">
+    <div class="grid-item">Item 1</div>
+  </a>
+  <a class="grid-link" href="https://youtube.com" target="_blank">
+    <div class="grid-item">Item 1</div>
+  </a>
+  <a class="grid-link" href="https://youtube.com" target="_blank">
+    <div class="grid-item">Item 1</div>
+  </a>
+  <a class="grid-link" href="https://youtube.com" target="_blank">
+    <div class="grid-item">Item 1</div>
+  </a>
+  <a class="grid-link" href="https://youtube.com" target="_blank">
+    <div class="grid-item">Item 1</div>
+  </a>
+</div>

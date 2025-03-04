@@ -1,0 +1,223 @@
+
+body {
+    font-family: Arial, sans-serif;
+    /* font-family: 'JetBrains Mono'; */
+    font-size: 19px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #1e2030;
+    color: #cad3f5;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+    position: relative;
+  }
+
+  /* p {
+    font-family: 'Fira Code';
+  } */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cad3f5;
+  border-radius: 10px;
+}
+  
+  .container {
+    display: flex;
+    min-height: 100vh; /* Full height of the viewport */
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    background: #24273a;
+    color: #cad3f5;
+    padding: 20px;
+    box-shadow: 10px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #gotohome {
+    margin-top: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    /* width: 0; */
+  }
+
+  #gotohome:hover {
+    color: rgba(205, 214, 244, 0.7);
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: #b8c0e0;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: box-shadow 0.3s ease
+  }
+  
+  .sidebar nav ul li a:hover {
+    /* text-decoration: underline; */
+    box-shadow: 0 3px 0px rgba(138, 173, 244, 0.35);
+  }
+
+  .sidebar nav ul li.selected a {
+    box-shadow: 0 2px 0px rgb(202, 211, 245);
+  }
+  
+  /* Main content styles */
+  main {
+    flex: 1; /* Take up remaining space */
+    /* padding: 20px 40px; */
+    /* padding: 0px 40px; */
+    padding: 20px 50px 50px 50px;
+    background: #363a4f;
+    max-width: 800px;
+    margin: 40px auto 40px auto;
+    /* margin: auto; */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    /* overflow: hidden;
+    position: relative; */
+    /* font-size: 19px; */
+  }
+
+  /* main p {
+    font-size: 20px ;
+  } */
+  
+  /* this might be the end of the post, hr like */
+  /* .post { 
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #24273a;
+  } */
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    background: #181926;
+    color: #cad3f5;
+    width: 100%;
+  }
+
+  /* catppuccine styled for links */
+  a {
+    color: #8aadf4;
+  }
+
+  @media (max-width: 1000px) { /* 768 */
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      /* find a way to include padding but not ruin the mobile view DONE*/
+      padding: 0;
+    }
+
+    .sidebar nav ul li {
+      margin-left: 20px;
+    }
+
+    #gotohome {
+      margin-top: 20px;
+    }
+  
+    main {
+      font-size: 18px;
+      padding: 0px 20px 0px 20px;
+      margin: 20px;
+    }
+
+    footer {
+      width: 100%;
+    }
+  }
+
+/* styles.css */
+/* Add these styles to your existing CSS */
+
+/* Animation classes */
+.slide-out-right {
+  animation: slideOutRight 0.5s forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s forwards;
+}
+
+.slide-out-up {
+  animation: slideOutUp 0.5s forwards;
+}
+
+.slide-in-up {
+  animation: slideInUp 0.5s forwards;
+}
+
+/* Keyframes for sliding animations */
+@keyframes slideOutRight {
+  from {
+      transform: translateX(0);
+      opacity: 1;
+  }
+  to {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideOutUp {
+  from {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  to {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Ensure the main content area is ready for animations */
+/* main {
+  overflow: hidden;
+  position: relative;
+} */
+

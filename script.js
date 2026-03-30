@@ -9,6 +9,7 @@ const posts = [
     { title: 'Second Post', path: 'posts/02.md' },
     { title: 'Third Post', path: 'posts/03.md' },
     { title: 'Fourth Post', path: 'posts/04.md' },
+    { title: 'Code Block Test', path: 'posts/05.md' },
   ];
 
   // Function to render post tabs in the sidebar

@@ -1,0 +1,70 @@
+/* change to :root */
+
+/* original color scheme, catppuccin mocha */
+:original-color {
+  /* --- Background Colors --- */
+  --bg-body: #1e2030;
+  --bg-sidebar: #24273a;
+  --bg-main: #363a4f;
+  --bg-footer: #181926;
+
+  /* --- Text Colors --- */
+  --text-primary: #cad3f5;   /* Main text, scrollbar, footer */
+  --text-secondary: #b8c0e0; /* Sidebar links */
+  --text-dim: rgba(205, 214, 244, 0.7); /* Hover state for Home */
+
+  /* --- Accent Colors --- */
+  --color-link: #8aadf4;     /* Global links */
+  --glow-hover: rgba(138, 173, 244, 0.35); /* Sidebar link hover glow */
+
+  /* --- Shadows & Effects --- */
+  --shadow-sidebar: rgba(0, 0, 0, 0.1);
+  --shadow-main: rgba(0, 0, 0, 0.2);
+  --shadow-selected: rgb(202, 211, 245); /* Matches --text-primary */
+}
+
+/* github dark */
+:github-dark {
+  /* --- Background Colors --- */
+  --bg-body: #010409;       /* GitHub canvas default */
+  --bg-sidebar: #0d1117;    /* GitHub canvas subtle */
+  --bg-main: #0d1117;       /* GitHub canvas subtle (for content cards) */
+  --bg-footer: #212830;     /* GitHub canvas default */
+
+  /* --- Text Colors --- */
+  --text-primary: #f0f6fc;  /* GitHub fg default */
+  --text-secondary: #d5dadf;/* GitHub fg muted */
+  --text-dim: rgba(201, 209, 217, 0.7); 
+
+  /* --- Accent Colors --- */
+  --color-link: #58a6ff;    /* GitHub accent fg (blue) */
+  --glow-hover: rgba(88, 166, 255, 0.15); /* Subtle blue glow */
+
+  /* --- Shadows & Effects --- */
+  --shadow-sidebar: rgba(0, 0, 0, 0.5);
+  --shadow-main: rgba(0, 0, 0, 0.5);
+  --shadow-selected: #58a6ff; /* Blue underline for selected state */
+}
+
+/* light mode, needs a bit of a color tweak */
+:lm {
+  /* --- Background Colors --- */
+  --bg-body: #ffffff;       /* GitHub canvas default */
+  --bg-sidebar: #f6f8fa;    /* GitHub canvas subtle */
+  --bg-main: #ffffff;       /* GitHub canvas default */
+  --bg-footer: #f6f8fa;     /* GitHub canvas subtle */
+
+  /* --- Text Colors --- */
+  --text-primary: #1f2328;  /* GitHub fg default (almost black) */
+  --text-secondary: #656d76;/* GitHub fg muted (gray) */
+  --text-dim: rgba(31, 35, 40, 0.7); 
+
+  /* --- Accent Colors --- */
+  --color-link: #0969da;    /* GitHub accent fg (blue) */
+  --glow-hover: rgba(9, 105, 218, 0.2); /* Subtle blue glow */
+
+  /* --- Shadows & Effects --- */
+  --shadow-sidebar: rgba(27, 31, 36, 0.04); /* Very subtle shadow */
+  --shadow-main: rgba(27, 31, 36, 0.04);    /* Very subtle shadow */
+  --shadow-selected: #0969da;               /* Blue underline for selected state */
+}

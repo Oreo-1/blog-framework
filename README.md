@@ -6,7 +6,8 @@ decided to use jekyll anyway wow
 todo:
 - left bar scroll with scroll
 - collapse item in bar for mobile view
-- 
+- icons
+- ~~css var~~
 
 <!-- # My personal statistic blog
 

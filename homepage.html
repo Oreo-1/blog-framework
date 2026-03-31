@@ -1,6 +1,19 @@
 <style>
+  :root {
+    /* --- Background Colors --- */
+    --bg-main: #0d1117;
+    --bg-card: #212830;
+
+    /* --- Text Colors --- */
+    --text-primary: #f0f6fc;
+
+    /* --- Shadows & Effects --- */
+    --shadow-card: rgba(0, 0, 0, 0.2);
+    --shadow-card-hover: rgba(0, 0, 0, 0.35);
+  }
+
   main {
-    background-color: #24273a;
+    background-color: var(--bg-main);
     padding: 0;
     margin: 0;
     max-width: 100%;
@@ -14,6 +27,7 @@
     /* margin-left: 40px; */
     text-align: center;
     line-height: 40px;
+    color: var(--text-primary); /* Added for consistency */
   }
 
   .TeNgAh {
@@ -35,12 +49,12 @@
   }
 
   .grid-item {
-    background-color: #363a4f;
-    color: #cad3f5;
+    background-color: var(--bg-card);
+    color: var(--text-primary);
     padding: 50px 10px 50px 10px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px var(--shadow-card);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
   }
@@ -49,22 +63,23 @@
     text-decoration: none;
     font-size: 40px;
     font-weight: bold;
+    color: var(--text-primary); /* Ensures link text inherits color */
   }
 
   .grid-item:hover {
     transform: translateY(-0.2rem);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 10px 10px var(--shadow-card-hover);
   }
 
   /* Responsive styles for mobile devices */
-  @media (max-width: 1000px) { /* 768 */
+  @media (max-width: 1000px) {
     main {
       padding: 0;
     }
 
     .taitel {
-        line-height: normal;
-        font-size: 18px;
+      line-height: normal;
+      font-size: 18px;
     }
 
     .grid-container {
@@ -73,7 +88,6 @@
       grid-template-rows: auto;
       /* Rows adjust automatically */
       padding: 0;
-
       margin: 40px;
     }
   }
@@ -88,11 +102,9 @@
 </div> -->
 
 <div class="taitel">
-  <h2>Blog Title</h1>
+  <h2>Blog Title</h2>
   <p>Blog Sub Title</p>
 </div>
-
-
 
 <div class="grid-container">
   <a class="grid-link" href="https://youtube.com" target="_blank">

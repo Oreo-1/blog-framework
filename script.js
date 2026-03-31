@@ -6,9 +6,9 @@
 // |_|   \___/|___/\__|___/
 const posts = [
     { title: 'First Post', path: 'posts/01.md' },
-    { title: 'Second Post', path: 'posts/02.md' },
-    { title: 'Third Post', path: 'posts/03.md' },
-    { title: 'Fourth Post', path: 'posts/04.md' },
+    { title: 'image test', path: 'posts/02.md' },
+    { title: 'lorem paragraph', path: 'posts/03.md' },
+    { title: 'headers and table', path: 'posts/04.md' },
     { title: 'Code Block Test', path: 'posts/05.md' },
   ];
 
